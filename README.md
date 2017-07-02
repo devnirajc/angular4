@@ -1,8 +1,8 @@
 # Angular CLI command
-npm install -g @angular/cli
-ng new my-dream-app
-cd my-dream-app
-ng serve
+npm install -g @angular/cli <br/>
+ng new my-dream-app <br/>
+cd my-dream-app <br/>
+ng serve <br/>
 
 # First
 
