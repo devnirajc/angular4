@@ -7,14 +7,15 @@ import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { SortPipe } from './app.sort';
+ 
 @NgModule({
   declarations: [
-    AppComponent,
-    MyComponentComponent,
-    ProductComponent,
-    MembersComponent
+      SortPipe,
+      AppComponent,
+      MyComponentComponent,
+      ProductComponent,
+      MembersComponent
   ],
   imports: [
     BrowserModule,

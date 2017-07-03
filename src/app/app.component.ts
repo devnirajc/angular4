@@ -15,7 +15,7 @@ export class AppComponent {
     arr = ['niraj' , 'chetan' , 'dilip'];
     isTrue = false;
     myname = 'niraj';
-    
+
     items = ['angular4', 'react', 'backbonejs' ];
     newItem = '';
     pushItem = function() {
@@ -25,6 +25,9 @@ export class AppComponent {
         }
     }
     removeItem = function(index){
-        this.items.splice(index , 1);    
+        this.items.splice(index , 1);
     }
+
+    name = "Niraj";
+    arr1 = [5, 2, 3, 8, 9];
 }
