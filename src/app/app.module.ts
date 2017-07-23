@@ -6,7 +6,8 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SortPipe } from './app.sort';
  
 @NgModule({
@@ -20,6 +21,7 @@ import { SortPipe } from './app.sort';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
         {
             path: 'member',

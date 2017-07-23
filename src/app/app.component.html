@@ -64,3 +64,41 @@
     {{arr1 | sort: 'decending'}}
 </div>
 
+<div>
+    <h2>Template driven form #9</h2>
+</div>
+
+<form class="container" 
+    #userForm = "ngForm" 
+    (ngSubmit) = "onSubmit(userForm.value)">
+    <input type="text" name="firstname" placeholder="firstname" ngModel/>
+    <br>
+    <input type="text" name="lastname" placeholder="lastname" ngModel/>
+    <br>
+    <select name="languages" ngModel>
+        <option value="c++">C++</option>
+        <option value="java">Java</option>
+        <option value="angular">Angular</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>
+
+<div>
+    <h2>Model driven form #10</h2>
+</div>
+<form class="container" 
+    [formGroup] = "form" 
+    (ngSubmit) = "onSubmit(form.value)">
+    <input type="text" name="firstname" placeholder="firstname" formControlName = "firstname"/>
+    <br>
+    <input type="text" name="lastname" placeholder="lastname" formControlName = "lastname"/>
+    <br>
+    <select name="languages" formControlName = "languages">
+        <option value="c++">C++</option>
+        <option value="java">Java</option>
+        <option value="angular">Angular</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>

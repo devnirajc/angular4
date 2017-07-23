@@ -1,9 +1,3 @@
-# Angular CLI command
-npm install -g @angular/cli <br/>
-ng new my-dream-app <br/>
-cd my-dream-app <br/>
-ng serve <br/>
-
 # First
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
