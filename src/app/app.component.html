@@ -87,7 +87,7 @@
 <div>
     <h2>Model driven form #10</h2>
 </div>
-<form class="container" 
+ <!-- <form class="container" 
     [formGroup] = "form" 
     (ngSubmit) = "onSubmit(form.value)">
     <input type="text" name="firstname" placeholder="firstname" formControlName = "firstname"/>
@@ -101,4 +101,26 @@
     </select>
     <br><br>
     <input type="submit" value="Submit" />
+</form>  -->
+
+<div>
+    <h2>Unit Converter</h2>
+</div>
+<form class="container"
+    [formGroup] = "form">
+    <input type="text" name="decimal"
+    (ngModelChange) = "decimalChanged(oldvalue, newvalue = $event)"
+    placeholder="Decimal" formControlName="decimal" />
+    <br>
+    <input type="text" name="hexa"
+    (ngModelChange) = "hexaChanged(oldvalue, newvalue = $event)"
+    placeholder="Hexadecimal" formControlName="hexa"/>
+    <br>
+    <input type="text" name="binary" 
+    (ngModelChange) = "binaryChanged(oldvalue, newvalue = $event)"
+    placeholder="Binary" formControlName="binary"/>
+    <br>
+    <input type="text" name="octal" 
+    (ngModelChange) = "octalChanged(oldvalue, newvalue = $event)"
+    placeholder="Octal" formControlName="octal"/>
 </form>
