@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -46,7 +46,10 @@ export class AppComponent {
     form;
     ngOnInit(){
         this.form = new FormGroup({
-            decimal: new FormControl(""),
+            decimal: new FormControl("", Validators.compose([
+                Validators.required,
+                Validators.minLength(3)
+            ])),
             hexa: new FormControl(""),
             binary: new FormControl(""),
             octal: new FormControl("")
